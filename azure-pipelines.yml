@@ -20,10 +20,10 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    goals: 'package'
+    #mavenPomFile: 'pom.xml'
+    mavenVersionOption: 'Default'
+    mavenVersion: '3.9.2'  # Specify the required Maven version here
+    #goals: 'clean install'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
