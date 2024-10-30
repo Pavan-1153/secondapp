@@ -22,7 +22,7 @@ steps:
     goals: 'package'
     #mavenPomFile: 'pom.xml'
     mavenVersionOption: 'Default'
-    mavenVersion: '3.8.8'  # Specify the required Maven version here
+    mavenVersion: '3.9.2'  # Specify the required Maven version here
     #goals: 'clean install'
 - task: PublishBuildArtifacts@1
   inputs:
